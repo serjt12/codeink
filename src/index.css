@@ -341,15 +341,15 @@ section{padding:80px 0;border-bottom:1px solid var(--line);}
 }
 .concept-mantra div:nth-child(1){
   animation-delay:0.1s;
-  border-left-color:var(--amber);
+  border-left-color:rgba(237,236,230,0.35);
 }
 .concept-mantra div:nth-child(2){
   animation-delay:0.2s;
-  border-left-color:var(--green);
+  border-left-color:rgba(237,236,230,0.35);
 }
 .concept-mantra div:nth-child(3){
   animation-delay:0.3s;
-  border-left-color:var(--amber);
+  border-left-color:rgba(237,236,230,0.35);
 }
 
 @media (hover:hover) and (pointer:fine){
@@ -369,8 +369,7 @@ section{padding:80px 0;border-bottom:1px solid var(--line);}
 }
 
 .concept-mantra .dim{
-  color:var(--green);
-  border-left-color:var(--green);
+  color:var(--paper-dim);
 }
 
 .concept-mantra div::after{
@@ -385,9 +384,7 @@ section{padding:80px 0;border-bottom:1px solid var(--line);}
   opacity:0.4;
 }
 
-.concept-mantra div:nth-child(1)::after{color:var(--amber);}
-.concept-mantra div:nth-child(2)::after{color:var(--green);}
-.concept-mantra div:nth-child(3)::after{color:var(--amber);}
+.concept-mantra div::after{color:var(--paper-dim);}
 
 .concept-text p{
   color:var(--paper-dim);
@@ -399,18 +396,14 @@ section{padding:80px 0;border-bottom:1px solid var(--line);}
   padding-left:20px;
   position:relative;
 }
-.concept-text p:nth-child(1){animation-delay:0.15s;border-left-color:rgba(184, 147, 90, 0.4);}
-.concept-text p:nth-child(2){animation-delay:0.25s;border-left-color:rgba(124, 155, 108, 0.4);}
-.concept-text p:nth-child(3){animation-delay:0.35s;border-left-color:rgba(184, 147, 90, 0.4);}
+.concept-text p:nth-child(1){animation-delay:0.15s;border-left-color:rgba(237,236,230,0.3);}
+.concept-text p:nth-child(2){animation-delay:0.25s;border-left-color:rgba(237,236,230,0.3);}
+.concept-text p:nth-child(3){animation-delay:0.35s;border-left-color:rgba(237,236,230,0.3);}
 
 .concept-text p + p{margin-top:24px;}
 .concept-text strong{
   color:var(--paper);
   font-weight:700;
-  background:linear-gradient(120deg, var(--amber) 0%, var(--paper) 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
 }
 
 @media (max-width:767px){
