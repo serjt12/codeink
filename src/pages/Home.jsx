@@ -82,7 +82,6 @@ export default function Home() {
           <div className="steps">
             {STEPS.map((s) => (
               <div className="step" key={s.num}>
-                <div className="step-num mono">{s.num}</div>
                 <div className="step-title">{s.title}</div>
                 <div className="step-desc">{s.desc}</div>
               </div>
