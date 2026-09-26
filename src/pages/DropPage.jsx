@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { DROPS } from '../data/drops.js'
-import CassetteIcon from '../components/CassetteIcon.jsx'
 import VinylSpinner from '../components/VinylSpinner.jsx'
 
 // DEMO ONLY: accepted answers live in the browser here purely so this
@@ -89,7 +88,6 @@ export default function DropPage() {
           <h1 className="modal-title big">SIGNAL NOT FOUND.</h1>
           <p className="modal-question">This code doesn't match a CODEINK drop. Check the piece and tap again.</p>
           <Link to="/" className="crack-cta tape-btn" style={{ marginTop: 32, display: 'inline-flex' }}>
-            <CassetteIcon width={32} />
             <span className="tape-label">BACK TO CODEINK</span>
           </Link>
         </div>
@@ -135,7 +133,6 @@ export default function DropPage() {
                 onKeyDown={(e) => e.key === 'Enter' && check()}
               />
               <button className="pw-submit tape-btn mono" onClick={check} disabled={decoding}>
-                <CassetteIcon width={28} />
                 <span className="tape-label">CRACK THE CODE</span>
               </button>
               <div className={`pw-status mono${status.variant ? ' ' + status.variant : ''}`}>
@@ -178,11 +175,9 @@ export default function DropPage() {
 
             <div className="reveal-links">
               <a href={drop.spotifyUrl} target="_blank" rel="noreferrer" className="tape-btn">
-                <CassetteIcon width={26} />
                 <span className="tape-label">LISTEN ON SPOTIFY</span>
               </a>
               <a href={drop.youtubeUrl} target="_blank" rel="noreferrer" className="tape-btn">
-                <CassetteIcon width={26} />
                 <span className="tape-label">LISTEN ON YOUTUBE MUSIC</span>
               </a>
             </div>

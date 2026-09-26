@@ -9,8 +9,10 @@ export const PRODUCTS = [
     statusVariant: 'active',
     shoppable: true,
     price: '$120',
+    image: '/src/assets/heart.jpeg',
+    imageWhite: '/src/assets/heart-white.jpeg',
     description:
-      'Heavyweight 240gsm cotton tee, hand-finished screen print. An NFC chip is stitched into the inner hem — tap it to enter the piece\u2019s hidden digital layer. Part of the CODEINK Drop series.',
+      'Heavyweight 240gsm cotton tee, hand-finished screen print. An NFC chip is stitched into the inner hem — tap it to enter the piece’s hidden digital layer. Part of the CODEINK Drop series.',
   },
   {
     id: '002',
@@ -19,8 +21,10 @@ export const PRODUCTS = [
     statusVariant: 'active',
     shoppable: true,
     price: '$120',
+    image: '/src/assets/angels.jpeg',
+    imageWhite: '/src/assets/angels-white.jpeg',
     description:
-      'Heavyweight 240gsm cotton tee, hand-finished screen print. An NFC chip is stitched into the inner hem — tap it to enter the piece\u2019s hidden digital layer. Part of the CODEINK Drop series.',
+      'Heavyweight 240gsm cotton tee, hand-finished screen print. An NFC chip is stitched into the inner hem — tap it to enter the piece’s hidden digital layer. Part of the CODEINK Drop series.',
   },
   {
     id: '003',
@@ -29,6 +33,8 @@ export const PRODUCTS = [
     statusVariant: 'encrypted',
     shoppable: false,
     price: null,
+    image: '/src/assets/moon-white.jpeg',
+    imageWhite: null,
     description: '',
   },
 ]
