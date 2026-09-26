@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { DROPS } from '../data/drops.js'
 import VinylSpinner from '../components/VinylSpinner.jsx'
+import { useImageProtection } from '../hooks/useImageProtection.js'
 
 // DEMO ONLY: accepted answers live in the browser here purely so this
 // prototype works without a backend. Before this protects a real answer,
@@ -25,6 +26,7 @@ function normalize(str) {
 export default function DropPage() {
   const { id } = useParams()
   const drop = DROPS[id]
+  useImageProtection()
 
   const bootLines = drop
     ? ['CODEINK', 'NFC SIGNAL DETECTED', 'IDENTIFYING ARTWORK...', `DROP ${drop.id} FOUND`, 'SONG: ENCRYPTED']
@@ -163,7 +165,8 @@ export default function DropPage() {
           <div className="reveal-body">
             <div className="access-granted mono">ACCESS: GRANTED □</div>
 
-            <div className="reveal-art-full">
+            <div className="reveal-art-full product-art">
+              {drop.image && <img src={drop.image} alt={drop.name} className="product-image" />}
               <span className="glyph">□</span>
             </div>
 
